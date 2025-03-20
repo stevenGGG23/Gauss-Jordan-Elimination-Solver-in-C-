@@ -1,15 +1,38 @@
-# Gauss-Jordan-Elimination-Solver-in-C- 
+ Gauss-Jordan Elimination for Solving Linear Equations
 
-This project implements a Gauss-Jordan Elimination algorithm in C++ to solve systems of linear equations given in augmented matrix form. The program reads a 3x4 matrix from a file, processes it into Reduced Row Echelon Form (RREF), and displays the solution.  
+## Description
 
-✅ Reads a 3x4 augmented matrix from a file using C++ file stream operations.
-✅ Applies Gauss-Jordan Elimination to convert the matrix into RREF.
-✅ Displays the matrix and solution with proper formatting.
-✅ Handles singular matrices (division by zero) and checks for inconsistent or infinite solutions.
-✅ Well-formatted output with matrices skewed to the right by 7 spaces for better readability.  
+This C++ program implements the **Gauss-Jordan Elimination** method to solve a system of linear equations. The program reads an augmented matrix from a file, performs row operations to transform the matrix into **Reduced Row Echelon Form (RREF)**, and then displays the solutions.
 
-Output: 
+### Features:
+- Reads a 3x4 augmented matrix from a file.
+- Displays the matrix in a human-readable format.
+- Performs Gauss-Jordan elimination to find the solution to the system of equations.
+- Handles division by zero and singular matrices by detecting errors.
 
+---
+
+## 📊 **Sample Output**
+
+### 🎯 **Input File (`matrix.dat`):**
+
+2 1 -1 8 -3 -1 2 -11 -2 1 2 -3
+
+yaml
+Copy
+Edit
+
+---
+
+### ⚡️ **Execution:**
+
+```bash
+g++ gauss_jordan.cpp -o gauss_jordan
+./gauss_jordan
+📚 Program Output:
+markdown
+Copy
+Edit
 Gauss-Jordan Elimination Solver
 ---------------------------------------------------------------------------
 Please Enter the filename containing the augmented matrix: matrix.dat
